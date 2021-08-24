@@ -31,3 +31,26 @@ A curated list of terrascan related tools, frameworks and articles
 - [Terrascan](https://github.com/accurics/terrascan) - Detect compliance and security violations across Infrastructure as Code to mitigate risk before provisioning cloud native infrastructure.
 - [TerraScan Github Action](https://github.com/accurics/terrascan-action). - Terrascan GitHub action. Scan infrastructure as code including Terraform, Kubernetes, Helm, and Kustomize file for security best practices.
 
+## Install Terrascan via 
+
+- For Native 
+
+```
+$ curl -L "$(curl -s https://api.github.com/repos/accurics/terrascan/releases/latest | grep -o -E "https://.+?_Darwin_x86_64.tar.gz")" > terrascan.tar.gz
+$ tar -xf terrascan.tar.gz terrascan && rm terrascan.tar.gz
+$ install terrascan /usr/local/bin && rm terrascan
+$ terrascan
+
+```
+or 
+
+```
+$ brew install terrascan
+
+```
+
+-  [huber](https://github.com/innobead/huber) - Huber :package:, simplify the package management from GitHub projects with a built-in awesome list of popular projects
+
+
+
+
